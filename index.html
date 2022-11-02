@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Button Clicker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav_bar">
+        <span class="main_header_text"> Dojonary </span>
+        <input
+          type="text"
+          name="search_bar"
+          id="search_bar"
+          placeholder="Search..."
+        />
+        <button class="login" onclick="loginChange(this)">Login</button>
+      </div>
+      <div class="site_content">
+        <div class="col_left">
+          <div class="definition_card">
+            <div class="start">
+              <span class="main_header_text"> ninja </span>
+              <span class="word_class"> noun </span>
+              <p>Plural: <em>ninjas</em></p>
+              <button class="likes" onclick="likeAlert()">13 Likes</button>
+            </div>
+            <div class="end">
+              <span class="definition"
+                >A practitioner skilled in <a href="#">Japanese</a> art of
+                <a href="#">ninjitsu</a></span
+              >
+            </div>
+          </div>
+          <div class="definition_card">
+            <div class="start">
+              <span class="main_header_text"> ninja </span>
+              <span class="word_class"> noun </span>
+              <p>Plural:<em> ninjas</em></p>
+              <button class="likes">13 Likes</button>
+            </div>
+            <div class="end">
+              <span class="definition"
+                >A practitioner skilled in <a href="#">Japanese</a> art of
+                <a href="#">ninjitsu</a></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col_right">
+          <div class="side_card">
+            <span class="main_header_text">
+              Dojonary is defined by <span class="you_effect">YOU</span>
+            </span>
+            <button class="add_definition" onclick="hideButton(this)">
+              Add Definition
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
